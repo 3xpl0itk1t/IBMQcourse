@@ -4,7 +4,7 @@
 
 In this assignment, we will explore and demonstrate the use of various cybersecurity tools available in Kali Linux. Our goal is to gain practical knowledge and skills in each of the 10 primary categories within Kali Linux, ranging from Information Gathering to Social Engineering Tools. For each category, we will select one tool and delve into its description, use case, and provide step-by-step demonstrations to understand its functionality.
 
-![Kali Photo](/IBMQcourse/Week%202/Week%202/kali.png)
+![Kali Photo](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/kali.png)
 
 ## 📋 10 Categories Listed in Kali Linux
 
@@ -60,7 +60,7 @@ Nmap is essential for Vulnerability Analysis as it helps in identifying open por
 7. **Analyze Results:**
     - Examine the results of your Nmap scans to identify potential vulnerabilities and security issues. Pay attention to open ports, service versions, and any specific vulnerabilities reported.
 
-    ![Vulnerability Scan](/IBMQcourse/Week%202/Week%202/nmvuln.webp)
+    ![Vulnerability Scan](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/nmvuln.webp)
 
 As we can see from the above picture the ports open are 
 
@@ -90,24 +90,24 @@ Metasploit Framework is crucial in Exploitation Tools to simulate real-world att
 **Demonstration Steps:**
 
 1. Open the Metasploit console in Kali Linux.
-    ![Console](/IBMQcourse/Week%202/Week%202/msfconsole.jpeg)
+    ![Console](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/msfconsole.jpeg)
 
 2. Select a module for a specific vulnerability.Which in this case is **ms17-010**
-    ![Module](/IBMQcourse/Week%202/Week%202/msfmod.jpeg)
+    ![Module](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/msfmod.jpeg)
 
 3. Configure Rhost & Lhost
-    ![Configure](/IBMQcourse/Week%202/Week%202/msfconfig.webp)
+    ![Configure](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/msfconfig.webp)
 
 4. Use 2nd exploit since target machine on windows 7.
-    ![Use](/IBMQcourse/Week%202/Week%202/msfuse.webp)
+    ![Use](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/msfuse.webp)
 
 5. Since we have access to the meterpreter now we do hashdump to get passwords.
-    ![HashDump](/IBMQcourse/Week%202/Week%202/meter.webp)
+    ![HashDump](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/meter.webp)
 
 Use a website like [CrackStation](https://crackstation.net/). To crack the hashes and get the password.
 
 6. Since this was a CTF room we are supposed to find Flags. We can use a simple command to search for them.
-    ![Search](/IBMQcourse/Week%202/Week%202/meterflag.webp)
+    ![Search](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/meterflag.webp)
 
 
 ### 3. Sniffing Spoofing (**Burpsuite)**
@@ -164,22 +164,22 @@ Burp Suite is a popular cybersecurity tool used for web application security tes
 **This is from one of the practice challenges of [PicoCtf](https://play.picoctf.org)**
 
 1. Intercept anyone HTTP request and forward the same without any modification.
-    ![1](/IBMQcourse/Week%202/Week%202/1.png)
+    ![1](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/1.png)
 
-2 In this http request we didn’t make any changes to the request.
-    ![2](/IBMQcourse/Week%202/Week%202/2.png)
+2. In this http request we didn’t make any changes to the request.
+    ![2](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/2.png)
 
 3. Intercept another HTTP request and forward the same after modifying the request.
-    ![3](/IBMQcourse/Week%202/Week%202/3.png)
+    ![3](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/3.png)
 
 4. This is the http request with the jwt token set, This jwt token is for users. But we want access as an admin.
-    ![4](/IBMQcourse/Week%202/Week%202/4.png)
+    ![4](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/4.png)
 
 5. As you can see we changed the jwt toke (cookie). There are various websites  you can use to do so.
-    ![5](/IBMQcourse/Week%202/Week%202/5.png)
+    ![5](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/5.png)
 
 6. After changing the http request we can see this time we have been logged in as admin. And since this was a ctf challenge we got a flag.
-    ![6](/IBMQcourse/Week%202/Week%202/6.png)
+    ![6](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/6.png)
 
 ### 4. Post Exploitation (**mimikatz)**
 
@@ -236,4 +236,4 @@ You can read more about this at:
 
 However here’s a screenshot I found online showing what theh end result of the credential dumping looks like:
 
-![Untitled](/IBMQcourse/Week%202/Week%202/mimikatz.png)
+![Untitled](https://github.com/3xpl0itk1t/IBMQcourse/blob/main/Week%202/Week%202/mimikatz.png)
